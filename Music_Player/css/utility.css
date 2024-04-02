@@ -1,0 +1,46 @@
+.border{
+    border: 2px solid red;
+    margin: 2px;
+}
+.flex{
+    display: flex;
+}
+.justify-center{
+    justify-content: center;
+}
+.item-center{
+    align-items: center;
+}
+.bg-upper{
+    background-color: #f1f1f1;
+    color: rgb(11, 11, 11);
+}
+.bg-normal{
+    background-color: rgb(249, 254, 255);
+    color: black;
+}
+.rounded{
+    border-radius: 7px;
+}
+.leftBoxMargin{
+    margin: 7px 7px;
+}
+.lightColor{
+    color: rgba(0, 0, 0, 0.707);
+}
+
+
+/* Works in WebKit based browsers (Chrome, Safari) */
+::-webkit-scrollbar {
+    width: 10px; /* Width of the scrollbar */
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: rgb(224, 224, 224); /* Color of the scrollbar thumb */
+    border-radius: 5px; /* Rounded corners for the thumb */
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: rgb(238, 252, 255); /* Color of the scrollbar track */
+  }
+  

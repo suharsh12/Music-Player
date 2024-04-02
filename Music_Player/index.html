@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> SJ's MUsic Player</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/utility.css">
+</head>
+
+<body >
+    <div class="container flex bg-normal"> <!--main div -->
+        <div class="left bg-normal "> <!--this is the left side box of the web page -->
+            <div class="close">
+                <img width="25" src="img/close.svg" alt="">
+            </div>
+            <div class="home bg-upper rounded leftBoxMargin"> <!--this div contains logo,home, and search-->
+                <div class="appLogoBox">
+                    <img class="appImg" src="img/logo.png" alt="App Logo" srcset="">
+                    <p class="appName">SJ MUSIC</p>
+                </div>
+                <div class="homeBlock ">
+                    <img class="homeImg " src="img/home.svg" alt="home Logo" srcset="">
+                    <p class="homeName ">Home</p>
+                </div>
+                <div class="searchBlock lightColor">
+                    <img class="searchImg" src="img/search.png" alt="Search" srcset="">
+                    <p class="searchName">Search</p>
+                </div>
+            </div>
+            <div class="library rounded bg-upper leftBoxMargin">
+                <div class="heading lightColor">
+                    <img class="playlistImg" src="img/playlist.svg" alt="" srcset="">
+                    <h2>Your Library</h2>
+                </div>
+                <div class="songlist">
+                    <ul>
+                    </ul>
+                </div>
+                <div class="footer">
+                    <div><a href="https://www.spotify.com/in-en/legal/"><span>Legal</span></a></div>
+                    <div><a href="https://www.spotify.com/in-en/safetyandprivacy/"><span>Safety</span></a></div>
+                    <div><a href="https://www.spotify.com/in-en/legal/privacy-policy/"><span>Privacy Policy</span></a>
+                    </div>
+                    <div><a href="https://www.spotify.com/in-en/accessibility/"><span>Accessibility</span></a></div>
+                    <div><a href="https://www.spotify.com/in-en/legal/cookies-policy/"><span>Cookies</span></a></div>
+                    <div><a href="https://www.spotify.com/in-en/legal/privacy-policy/#s3"><span>About Ads</span></a>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+        <div class="right rounded leftBoxMargin"> <!--this is the right side box of the web page-->
+            <div class="headerRight rounded bg-upper">
+                <div class="nav">
+                    <div class="hamNimgs">
+                        <img width="40" class="hamburger" src="img/hamburger.svg" alt="">
+
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
+                            color="#000000" fill="none">
+                            <path d="M15 6C15 6 9.00001 10.4189 9 12C8.99999 13.5812 15 18 15 18" stroke="currentColor"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
+                            color="#000000" fill="none">
+                            <path d="M9.00005 6C9.00005 6 15 10.4189 15 12C15 13.5812 9 18 9 18" stroke="currentColor"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                </div>
+                <div class="buttons">
+                    <button class="signupBtn">Sign up</button>
+                    <button class="loginBtn">Log in</button>
+                </div>
+            </div>
+            <div class="musicPlaylist">
+                <h1>Suharsh Playlists</h1>
+                <div class="cardContainer">
+                    <div data-folder="ncs" class="card"> <!--card 1 -->
+                        <div class="play">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 30" width="80%" height="80%"
+                                fill="black">
+                                <g transform="translate(12, 12)">
+                                    <path
+                                        d="M6.8906 0.846C6.5371 2.189 4.8667 3.138 1.5257 5.0361C-1.70398 6.8709 -3.31876 7.7884 -4.62017 7.4196C-5.1582 7.2671 -5.64841 6.9776 -6.04376 6.5787C-7 5.6139 -7 3.7426 -7 0C-7 -3.7426 -7 -5.6139 -6.04376 -6.5787C-5.64841 -6.9776 -5.1582 -7.2671 -4.62017 -7.4196C-3.31876 -7.7884 -1.70398 -6.8709 1.5257 -5.0361C4.8667 -3.138 6.5371 -2.189 6.8906 -0.846C7.03654 0.708403 7.03654 1.2916 6.8906 1.846Z"
+                                        stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
+                                </g>
+                            </svg>
+                        </div>
+
+
+                        <img src="img/suharshFav.jpg" alt="">
+                        <h2>Suharsh's fav!</h2>
+                        <p>Fill you with happiness!</p>
+                    </div>
+                    <div data-folder="cs" class="card"> <!--card 2 -->
+                        <div class="play">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 30" width="80%" height="80%"
+                                fill="black">
+                                <g transform="translate(12, 12)">
+                                    <path
+                                        d="M6.8906 0.846C6.5371 2.189 4.8667 3.138 1.5257 5.0361C-1.70398 6.8709 -3.31876 7.7884 -4.62017 7.4196C-5.1582 7.2671 -5.64841 6.9776 -6.04376 6.5787C-7 5.6139 -7 3.7426 -7 0C-7 -3.7426 -7 -5.6139 -6.04376 -6.5787C-5.64841 -6.9776 -5.1582 -7.2671 -4.62017 -7.4196C-3.31876 -7.7884 -1.70398 -6.8709 1.5257 -5.0361C4.8667 -3.138 6.5371 -2.189 6.8906 -0.846C7.03654 0.708403 7.03654 1.2916 6.8906 1.846Z"
+                                        stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
+                                </g>
+                            </svg>
+                        </div>
+
+                        <img src="img/happy2.jpg" alt="">
+                        <h2>Happy Hits</h2>
+                        <p>enjoy relaxed beats.</p>
+                    </div>
+                    
+
+                </div>
+                <div class="playbar">
+                    <div class="seekbar">
+                        <div class="circle">
+
+                        </div>
+                    </div>
+                    <div class="nameNtime">
+
+                        <div class="songinfo"></div>
+                        <div class="songButtons">
+                            <img width="30" id="previous" src="img/previousSong.svg" alt="">
+                            <img width="30" id="play" src="img/play.svg" alt="">
+                            <img width="30" id="next" src="img/nextSong.svg" alt="">
+                        </div>
+                        <div class="timeNvol">
+                            <div class="songtime"></div>
+                            <div class="volume">
+                                <img width="25" src="img/volume.svg" alt="">
+                                <div class="range">
+                                    <input type="range" name="volume">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

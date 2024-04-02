@@ -1,0 +1,447 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Convergence&family=Frank+Ruhl+Libre:wght@300&family=Noto+Sans:wght@200&family=Permanent+Marker&family=Poppins:wght@200&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Satisfy&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Convergence&family=Frank+Ruhl+Libre:wght@300&family=Noto+Sans:wght@200&family=Permanent+Marker&family=Poppins:wght@200&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Satisfy&family=Tourney:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+:root{
+    --a:0;
+}
+
+.dark{
+    background-color: rgb(28, 26, 26);
+    color: rgb(225, 224, 224);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+.close{
+    display: none;
+}
+
+.left{
+    width: 25vw;
+    background-color: rgb(249, 254, 255);
+}
+.right{
+    width: 75vw;
+}
+
+body{
+    background-color: rgb(249, 254, 255);
+    color: black;
+}
+
+/* this is for the app logo and name */
+.appLogoBox{
+    display: flex;
+    width: 45%;
+    gap: 5px;
+    /* margin: 10px 10px; */
+    padding: 7px 8px;
+}
+.appImg{
+    width: 55px;
+}
+.appName{
+    align-self: center;
+    font-size: large;
+    font-family: "Tourney", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* this is for the home logo and name */
+.homeBlock{
+    display: flex;
+    width: 40%;
+    gap: 10px;
+    /* margin: 10px 19px; */
+    padding: 5px 20px;
+}
+.homeImg{
+    width: 22px;
+}
+.homeName{
+    align-self: center;
+    font-size: small;
+    font-weight: bold;
+}
+
+/* this is for the search logo and name */
+.searchBlock{
+    display: flex;
+    width: 40%;
+    gap: 10px;
+    /* margin: 10px 19px; */
+    padding: 4px 20px;
+}
+.searchImg{
+    width: 22px;
+    opacity: 0.7;
+}
+.searchName{
+    align-self: center;
+    font-size: small;
+    font-weight: bold;
+}
+
+.heading{
+    display: flex;
+    width: 100%;
+    gap: 10px;
+    /* margin: 10px 19px; */
+    padding: 4px 20px;
+}
+.playlistImg{
+    width: 25px;
+    opacity: 0.7;
+}
+.heading h2{
+    align-self: center;
+    font-size: large;
+    font-weight: bold;
+}
+
+.library{
+    min-height: 80vh;
+    position: relative;
+    margin: 0px;
+}
+.library .heading{
+    padding: 15px 0 10px 24px;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+
+.footer{
+   display: flex;
+   font-size: 10px;
+   color: gray;
+   gap: 13px;
+   position: absolute;
+   bottom: 0;
+   padding: 10px 0;
+}
+.footer a{
+    color:rgba(0, 0, 0, 0.707);
+
+}
+
+.headerRight{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px;
+    height: 72px;
+}
+.headerRight > *{
+    padding: 20px;
+}
+
+.right{
+    background-color: #e7e7e7;
+    position: relative;
+}
+
+.musicPlaylist{
+    padding: 16px;
+}
+.musicPlaylist h1{
+    padding: 16px;
+}
+.cardContainer{
+    margin: 20px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    max-height: 65vh;
+    overflow-y: auto;
+    padding-bottom: 144px ;
+}
+.card{
+    width: 180px;
+    /* height: 400px; */
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #f1f1f1;
+    position: relative;
+    transition: all .5s;
+}
+.card:hover{
+    background-color: rgb(229 209 229);
+    cursor: pointer;
+    --a:1;
+}
+
+.card img{
+    width: 100%;
+    object-fit: contain;
+}
+.card > *{
+    padding-top: 10px;
+}
+
+.play{
+    width: 50px;
+    height: 45px;
+    border-radius: 50%;
+    background: linear-gradient(45deg, #ff7991, #54d5ff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 138px;
+    right: 17px;
+    opacity: var(--a);
+    transition: all 1s ease-out;
+}
+
+.signupBtn{
+    background-color: #f1f1f1;
+    color: rgba(0, 0, 0, 0.707);
+    font-weight: bold;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 10px;
+
+}
+.signupBtn:hover{
+    font-size: 17px;
+    color: black;
+}
+
+.loginBtn{
+    background: linear-gradient(45deg, #ff385b3d, #00c1ff94);
+    border: none;
+    outline: none;
+    border-radius: 21px;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px;
+    width: 80px;
+    cursor: pointer;
+}
+.loginBtn:hover{
+    background: linear-gradient(90deg, #ff385d63, #00bfff7b);
+    border: none;
+    outline: none;
+    border-radius: 21px;
+    color: rgb(255, 255, 255);
+    font-size: 17px;
+    font-weight: bold;
+    padding: 10px;
+    width: 81px;
+    cursor: pointer;
+}
+
+.playbar{
+    position: fixed;
+    bottom: 15px;
+    background-color: rgb(130 21 124 / 13%);
+    border-radius: 15px;
+    width: 70vw;
+    color: rgb(0, 0, 0);
+    padding: 13px;
+    min-height: 38px;
+}
+
+.songButtons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+.songButtons img{
+    cursor: pointer;
+}
+
+.songlist{
+    height: 464px;
+    overflow: auto;
+    margin: 10px 0;
+}
+
+.songlist ul{
+    padding: 0 12px;
+}
+.songlist ul li{
+    list-style-type: decimal;
+    display: flex;
+    gap: 10px;
+    cursor: pointer;
+    /* padding: 12px 0; */
+    border: 1px solid black;
+    margin: 12px 0;
+    padding: 13px;
+    border-radius: 5px;
+    justify-content: center;
+}
+
+.hamburger{
+    display: none;
+}
+
+.hamNimgs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 13px;
+}
+
+.playnow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.playnow span{
+    font-size: 13px;
+    width: 55px;
+    padding: 10px;
+}
+
+.songlist .info {
+    font-size: 13px;
+    width: 155px;
+}
+
+.info div{
+    word-break: break-all;
+}
+   
+.seekbar{
+    height: 4px;
+    width: 98%;
+    background-color: rgb(112 56 56 / 48%);
+    /* border: 2px solid rgb(112 56 56 / 48%); */
+    position: absolute;
+    bottom: 10px;
+    border-radius: 10px;
+    padding: 0.5px;
+    cursor: pointer;
+}
+
+.circle{
+    width: 15px;
+    height: 15px;
+    border-radius: 13px;
+    background-color: #ba7c9ed6;
+    position: relative;
+    bottom: 6px;
+    left: 0%;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.nameNtime{
+    display: flex;
+    justify-content:space-between;
+}
+
+.timeNvol{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.songtime{
+    width: 125px;
+    padding: 0 12px;
+}
+
+.songinfo{
+    max-height: 22px;
+    overflow: hidden;
+    font-size: 17px;
+    width: 250px;
+}
+.volume{
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    cursor: pointer;
+}
+.range input{
+    cursor: pointer;
+}
+
+@media (max-width:1352px) {
+    .left{
+        background-color: rgb(249, 254, 255);
+        position: absolute;
+        left: -120%;
+        left: -120%;
+        transition: all .4s;
+        z-index: 1;
+        width: 370px;
+        padding: 0;
+    }
+
+    .left .close{
+        position: absolute;
+        right: 20px;
+        top: 25px;
+    }
+    
+
+    .right{
+        width: 100vw;
+    }
+    .playbar{
+        width: calc(100vw - 65px);
+        background-color: rgba(130, 21, 125, 0.334);
+    }
+
+    .seekbar{
+        width: calc(100vw - 70px);
+    }
+
+    .hamburger{
+        display: block;
+    }
+
+    .right{
+        margin: 0;
+    }
+
+    .card{
+        width: 44vw;
+    }
+    .cardContainer{
+        margin: 0;
+        justify-content: center;
+    }
+
+    .close{
+        display: block;
+    }
+
+    .nameNtime{
+        flex-direction: column;
+        gap: 23px;
+        align-items: center;
+        
+    }
+    .cardContainer{
+        max-height: 50vh;
+    }
+
+    .songinfo{
+        width: auto;
+        font-weight: bold;
+    }
+}
+
+
+@media (max-width:500px) {
+    .card{
+        width: 85vw;
+    }
+}
